@@ -1,0 +1,2 @@
+module ThailiteraturesHelper
+end

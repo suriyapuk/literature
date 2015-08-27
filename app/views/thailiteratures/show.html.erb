@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @thailiterature.name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @thailiterature.picture %>
+</p>
+
+<p>
+  <strong>Fileupload:</strong>
+  <%= @thailiterature.fileupload %>
+</p>
+
+<%= link_to 'Edit', edit_thailiterature_path(@thailiterature) %> |
+<%= link_to 'Back', thailiteratures_path %>

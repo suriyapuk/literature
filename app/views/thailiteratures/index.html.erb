@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<div style="align:center;"><img src="/assets/Banner.jpg"></div>
+<h1>List of Thai Literatures</h1>
+<% @thailiteratures.each do |thailiterature| %>
+	   <div class="float"><%=link_to( image_tag(thailiterature.picture_url), thailiterature.fileupload_url , :target => "_blank") %><p><%= thailiterature.name %></p></div>
+    <% end %>
+
+<!--
+<table style="width:1000px;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Picture</th>
+      <th>Fileupload</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @thailiteratures.each do |thailiterature| %>
+      <tr>
+        <td valign="top"><%= thailiterature.name %></td>
+		<td><%=link_to( image_tag(thailiterature.picture_url), thailiterature.fileupload_url , :target => "_blank") %></td>
+		<td><%= image_tag(thailiterature.picture_url) %></a></td>
+		
+        <td><%= link_to 'Show', thailiterature %></td>
+        <td><%= link_to 'Edit', edit_thailiterature_path(thailiterature) %></td>
+        <td><%= link_to 'Destroy', thailiterature, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+-->
+<br><br>
+
+<!--<%= link_to 'New Thailiterature', new_thailiterature_path %>-->

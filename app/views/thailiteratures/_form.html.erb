@@ -1,0 +1,29 @@
+<%= form_for(@thailiterature) do |f| %>
+  <% if @thailiterature.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thailiterature.errors.count, "error") %> prohibited this thailiterature from being saved:</h2>
+
+      <ul>
+      <% @thailiterature.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, :class=>"input-lg" %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+	<%= f.file_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :fileupload %><br>
+    <%= f.file_field :fileupload %>
+  </div>
+  <div class="actions">
+    <%= f.submit value: 'Add new literature', :class=> "btn btn-primary" %>
+  </div>
+<% end %>

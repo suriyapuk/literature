@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Literature</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!--<%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>-->
+  <%= javascript_include_tag "rails" %>
+  <link rel="stylesheet" href="/assets/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap-theme.css">
+  <style>
+	div.float
+	{
+	  float: left;
+	  margin: 20px;
+	}
+	  
+	div.float p
+	{
+	   text-align: center;
+	}
+  </style>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/thailiteratures">Thai Literatures</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/thailiteratures/new">Add New Literatures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <%= yield %>
+</div>
+<footer>
+  <div class="container" style="text-align:center;">
+   Thai Literatures powered by Faculty of Humanities, Chiang Mai University
+  </div>
+</footer>
+<script src="assets/bootstrap.js"></script>
+</body>
+</html>
