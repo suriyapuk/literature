@@ -1,28 +1,11 @@
-== README
+This literature website was build by Ruby On Rails 4.2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Objective
+- Present my skill on Ruby On Rails
 
-Things you may want to cover:
+The original version of this website is WordPress.
 
-* Ruby version
+You can see the original website here
+http://human.cmu.ac.th/thailiterature/
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Please feel free to add any general comments.
